@@ -1,0 +1,11 @@
+# Site settings
+title: My blog
+email: oleg.stadnichenko@gmail.com
+description: >
+  Hello! This is my blog site. Please find useful information here.
+baseurl: "/blog"
+url: "http://oleg-sta.github.io" # the base hostname & protocol for your site
+github_username:  oleg-sta
+
+markdown: kramdown
+permalink: /:year/:title:output_ext
