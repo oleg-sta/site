@@ -7,7 +7,8 @@ baseurl: "/site"
 url: "http://oleg-sta.github.io" # the base hostname & protocol for your site
 github_username:  oleg-sta
 facebook_username: oleg.sta
-linkedin_username: https://www.linkedin.com/in/oleg-stadnichenko
+linkedin_username: oleg-stadnichenko
+medium_username: stoleg
 
 markdown: kramdown
 permalink: /:year/:title:output_ext
