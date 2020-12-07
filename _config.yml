@@ -9,3 +9,5 @@ github_username:  oleg-sta
 
 markdown: kramdown
 permalink: /:year/:title:output_ext
+
+theme: jekyll-theme-minimal
