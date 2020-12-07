@@ -40,8 +40,9 @@ $on-laptop:        800px;
 }
 
 img[alt="my_photo"] {
-  max-width:  90px;
+  max-width:  180px;
   display: block;
+  float: right;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
