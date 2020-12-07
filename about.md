@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
+title: About Oleg Stadnichenko
 permalink: /about/
 ---
 
-Welcome to my site!
+Welcome to my personal site!
