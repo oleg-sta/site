@@ -1,10 +1,11 @@
 # Site settings
 title: Software engineering blog
+my_name: Oleg Stadnichenko
 email: oleg.stadnichenko@gmail.com
 description: >
   Information about software development, architecture and other technical things.
 baseurl: "/site"
-url: "http://oleg-sta.github.io" # the base hostname & protocol for your site
+url: "http://oleg-sta.github.io"
 github_username:  oleg-sta
 facebook_username: oleg.sta
 linkedin_username: oleg-stadnichenko
