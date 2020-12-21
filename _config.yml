@@ -10,6 +10,7 @@ github_username:  oleg-sta
 facebook_username: oleg.sta
 linkedin_username: oleg-stadnichenko
 medium_username: stoleg
+twitter_username: oleg_sta
 
 markdown: kramdown
 permalink: /:year/:title:output_ext
