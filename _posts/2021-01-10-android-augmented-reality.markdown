@@ -9,6 +9,8 @@ categories: android
 In this article I'll give you understanding how to write application on Android with effects on the face from camera in realtime.
 We will go through all the key points here.
 
+![Demo of result]({{site.url}}/assets/face-mask-demo.gif)
+
 ## Working with camera
 
 The first thing we need to do is to get image from camera.
@@ -68,7 +70,7 @@ If we want to find facial expression, we should solve equation:
 ```
 dst = argmin X ∥ src1⋅ X − src2∥
 ```
-by SVD decomposition. Where:
+by [SVD](https://en.wikipedia.org/wiki/Singular_value_decomposition) decomposition. Where:
 * scr1 - 3d model
 * X - transformations on the model, including projection on the surface
 * scr2  - found points on image
