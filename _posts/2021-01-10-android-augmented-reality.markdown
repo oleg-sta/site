@@ -14,8 +14,7 @@ We will go through all the key points here.
 The first thing we need to do is to get image from camera.
 Android API provides us package `android.hardware.camera2`.
 First you need to choose camera, by getting all the available cameras `Camera.getNumberOfCameras()`.
-Here you should specify which camera you want to use, and what resolution you need.
-Then open camera:
+Here you should specify which camera you want to use, and then open camera:
 ```
     mCamera = Camera.open(cameraIndex);
 ```
@@ -57,8 +56,8 @@ We don't need to do it, everything is already done with `face_detection` method 
 On the face we should find specific points to understand face orientation and facial expression.
 For this we are going to use [dlib](http://dlib.net/) library.
 It's also popular library for machine learning written on C++.
-Example of finding points on the face here http://dlib.net/face_landmark_detection_ex.cpp.html.
-As it's written you could use ready model http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2.
+Example of finding points on the face here [http://dlib.net/face_landmark_detection_ex.cpp.html](http://dlib.net/face_landmark_detection_ex.cpp.html).
+As it's written you could use ready model [http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2).
 
 ## Orientation and facial expression
 
@@ -101,9 +100,9 @@ In overall, to build this effect we had to use:
 
 And as result we have Android application that can do all that things.
 
-Sources of the library https://github.com/oleg-sta/VrFace
+Sources of the library [https://github.com/oleg-sta/VrFace](https://github.com/oleg-sta/VrFace)
 
 Examples of using library:
-* https://github.com/oleg-sta/FaceMaskExample
-* https://github.com/oleg-sta/Masks
-* https://github.com/oleg-sta/MakeUp
+* [https://github.com/oleg-sta/FaceMaskExample](https://github.com/oleg-sta/FaceMaskExample)
+* [https://github.com/oleg-sta/Masks](https://github.com/oleg-sta/Masks)
+* [https://github.com/oleg-sta/MakeUp](https://github.com/oleg-sta/MakeUp)
