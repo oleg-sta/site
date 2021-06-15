@@ -6,6 +6,8 @@ categories: android
 ---
 # Don’t forget to check your Microservice
 
+Over the past few years, I’ve been doing some deep-diving into the world of microservices. As a product developer, I’ve implemented a huge number of microservices. And everytime I need to be sure that I didn’t forget anything, so I’ve created a checklist for myself. And out of my list I decided to write this short article to mention some important things. So let’s go through each point.
+
 ## Is the microservice self-contained?
 
 ## Is the microservice self-contained?
