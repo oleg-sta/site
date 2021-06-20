@@ -20,4 +20,10 @@ For each particular change you should have the ability to check if it doesn’t 
 
 ## Is observability provided?
 
+Observability based on three pillars: metrics, logging and distributed tracing. Those things are very important to check the health of the service and find potential problems. Let’s share more details on each of these.
+You should put metrics on all API calls, on all downstream calls, and important internal processes. Check that metrics have all appropriate types: gauges, counters and timers. And don’t forget to add aggregating information, like tags, e.g. response based on code, or different types of requests. Out of these you can create dashboards, where you could see the health of the system in one place.
+Based on metrics, alerts help you notify about potential problems, e.g. you could have alerts on too low traffic, or too much on one particular request type, or response code with technical problems. Or too many errors in logs. This should trigger an alert for further investigation.
+Logging should help you find information on all the processes in the system in one place, particularly ELK is a very popular way to do it. Furthermore, it’s good practise to have one particular identifier throughout the whole system.
+Tracing helps you find the route of the request throughout the whole system: how long does it take on a particular service and which methods are invoked.
+
 ## Was it covered by comprehensive documentation?
