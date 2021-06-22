@@ -27,3 +27,7 @@ Logging should help you find information on all the processes in the system in o
 Tracing helps you find the route of the request throughout the whole system: how long does it take on a particular service and which methods are invoked.
 
 ## Was it covered by comprehensive documentation?
+
+Good documentation helps you avoid misunderstanding between teams for the way of using implemented API. If there is no clear explanation that others teams should spend precious time on understanding how API works. And even within the team it could be a problem to find an answer if you should check code or ask teammates how it works.
+Not only the API should be documented, but all the internal processes and external communication. And all the changes in services should be documented [at least!] in release changes. Every change should have reasons and links to the bug-tracking system where more information is provided.
+All discussions should be documented even if no solution was provided. Following these rules significantly helps to support and improve the project.
