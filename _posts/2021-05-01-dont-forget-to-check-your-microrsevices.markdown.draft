@@ -31,3 +31,11 @@ Tracing helps you find the route of the request throughout the whole system: how
 Good documentation helps you avoid misunderstanding between teams for the way of using implemented API. If there is no clear explanation that others teams should spend precious time on understanding how API works. And even within the team it could be a problem to find an answer if you should check code or ask teammates how it works.
 Not only the API should be documented, but all the internal processes and external communication. And all the changes in services should be documented [at least!] in release changes. Every change should have reasons and links to the bug-tracking system where more information is provided.
 All discussions should be documented even if no solution was provided. Following these rules significantly helps to support and improve the project.
+
+Let’s sum up everything in one checklist:
+Don’t share database
+Dedicated team
+CI/CD configured
+Observability
+Full documentation
+In conclusion, I hope those things were very helpful. Don’t forget to create your checklist for all the microservices and check one-by-one if you didn’t omit anything from your sight. Let your service be independent, observable and well-documented.
