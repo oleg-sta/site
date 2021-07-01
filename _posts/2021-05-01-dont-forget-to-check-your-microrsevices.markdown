@@ -11,11 +11,11 @@ Over the past few years, I’ve been doing some deep-diving into the world of mi
 ## Is the microservice self-contained?
 
 By self-contained I mean it should be independent as much as possible from any other services. Which means it should have a dedicated database, responsible team and ci/cd pipeline. Let’s go through each of these points.
-Why is it important not to share a database?
+* Why is it important not to share a database?
 If microservices share a database, it means changes could impact on other services. And for any changes you need to know which services use the database, communicate with responsible teams and figure out a plan of rolling out all changes to production. So I think it’s too much work to do. And therefore microservices should communicate through API, queues or streams. You should have only dedicated models that are shared, and how data persisted in microservices should be the responsibility of microservice.
-Why should one dedicated team be responsible for the microservice?
+* Why should one dedicated team be responsible for the microservice?
 In case of problems in production, the team should check it. And if several teams participate in supporting then they should have synchronization and quick reaction on the problem, and know service-well. With a dedicated team it’s easy to manage problem-solving and share knowledge between teammates. Worth mentioning it doesn’t mean that one team should have only one service, and it doesn’t mean that only one team could make changes, but this team is mostly responsible for the review changes and supporting service.
-Why shouldn’t you forget about the CI/CD pipeline?
+* Why shouldn’t you forget about the CI/CD pipeline?
 For each particular change you should have the ability to check if it doesn’t break anything. For this you should have the ability to check code-style, build your branch, check for potential vulnerabilities, run unit tests, and maybe integration tests, and then do all the steps again after merge. Rollout to the staging environment, and later to production if all checks passed should be automated. This is done by Continuous Integration and Continuous Delivery.
 
 ## Is observability provided?
@@ -33,9 +33,10 @@ Not only the API should be documented, but all the internal processes and extern
 All discussions should be documented even if no solution was provided. Following these rules significantly helps to support and improve the project.
 
 Let’s sum up everything in one checklist:
-Don’t share database
-Dedicated team
-CI/CD configured
-Observability
-Full documentation
+* Don’t share database
+* Dedicated team
+* CI/CD configured
+* Observability
+* Full documentation
+
 In conclusion, I hope those things were very helpful. Don’t forget to create your checklist for all the microservices and check one-by-one if you didn’t omit anything from your sight. Let your service be independent, observable and well-documented.
